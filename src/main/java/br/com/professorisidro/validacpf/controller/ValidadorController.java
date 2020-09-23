@@ -18,5 +18,10 @@ public class ValidadorController {
 		}
 		 return "{\"status\": \"invalido\"}";
 	}
+	@GetMapping("/")
+	public String home() {
+		 return "{\"mensagem\": \"Esta é uma API de validação de CPF, para validar utilize o path validaCPF\"}";
+	}
+	
 
 }
